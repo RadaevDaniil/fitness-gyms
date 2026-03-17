@@ -142,3 +142,5 @@ window.onload = function() {
 const saveCartToStorage = () => {
     localStorage.setItem("cart", JSON.stringify(cart));
 };
+
+//how are you
