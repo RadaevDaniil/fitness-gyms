@@ -143,4 +143,4 @@ const saveCartToStorage = () => {
     localStorage.setItem("cart", JSON.stringify(cart));
 };
 
-//how are you
+//Привет это новый коммит
