@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Сеть фитнес-залов Radaev Gyms</h1>
+    <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог фитнес-залов</a></li>
+    </ul>
+
+    <hr>
+    
+    <h2>Каталог</h2>
+    
+    <!-- Фильтр (просто строка поиска) -->
+    <input type="text" id="filterInput" placeholder="Поиск по названию...">
+
+    <!-- Товар 1 -->
+    <div class="product-card" data-id="1" data-name="Зал на Октябрьской" data-price="3500">
+        <h4>Зал на Октябрьской</h4>
+        <p>Цена: 3500р/месяц</p>
+        <a href="images/oct.jpg">
+            <img src="images/oct.jpg" alt="Зал на Октябрьской" width="200" height="300">
+        </a>
+        <br>
+        <button class="add-to-cart">Добавить в корзину</button>
+        <p><a href="gym_oct.html">Подробнее о зале</a></p>
+    </div>
+
+    <!-- Товар 2 -->
+    <div class="product-card" data-id="2" data-name="Зал на Ленинском проспекте" data-price="3000">
+        <h4>Зал на Ленинском проспекте</h4>
+        <p>Цена: 3000р/месяц</p>
+        <a href="images/len.jpg">
+            <img src="images/len.jpg" alt="Зал на Ленинском проспекте" width="200" height="300">
+        </a>
+        <br>
+        <button class="add-to-cart">Добавить в корзину</button>
+        <p><a href="gym_len.html">Подробнее о зале</a></p>
+    </div>
+
+    <!-- Товар 3 -->
+    <div class="product-card" data-id="3" data-name="Зал в Митино" data-price="2500">
+        <h4>Зал в Митино</h4>
+        <p>Цена: 2500р/месяц</p>
+        <a href="images/mit.jpg">
+            <img src="images/mit.jpg" alt="Зал в Митино" width="200" height="300">
+        </a>
+        <br>
+        <button class="add-to-cart">Добавить в корзину</button>
+        <p><a href="gym_mitino.html">Подробнее о зале</a></p>
+    </div>
+
+    <hr>
+
+    <!-- КОРЗИНА (просто добавили внизу) -->
+    <h2>Корзина</h2>
+    <div id="cartItems">
+        <p>Корзина пуста</p>
+    </div>
+    
+    <p id="cartTotal">Итого: 0 руб</p>
+    
+    <button id="clearCartBtn">Очистить корзину</button>
+    <button id="payBtn">Оплатить</button>
+
+    <footer>
+        <p>&copy; 2026 Radaev Gyms. Все права защищены.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
